@@ -1,0 +1,15 @@
+
+<app-server-add></app-server-add>
+
+
+<h1> ::  Servers List ::</h1>
+
+
+<ul>
+
+    <li *ngFor="let server of servers" [ngStyle]="{backgroundColor: getColor(server)}">
+        {{server.name}} - {{server.status}} - {{server.id}}
+
+    </li>
+
+</ul>
